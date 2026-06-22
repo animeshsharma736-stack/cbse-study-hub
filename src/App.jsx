@@ -16,7 +16,7 @@ function App() {
       <AuthProvider>
         <Routes>
           <Route path="/auth/callback" element={<AuthCallback />} />
-          <Route element={<Layout><Routes></Routes></Layout>}>
+          <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/tutor" element={<Tutor />} />
             <Route path="/focus" element={<Focus />} />
