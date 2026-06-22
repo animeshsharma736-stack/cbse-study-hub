@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import { BookOpen, Sparkles, Target, Star, Info, LogOut } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 
@@ -11,9 +11,8 @@ const navItems = [
   { to: "/about", label: "About", icon: Info, testId: "nav-about" },
 ];
 
-export default function Layout({ children }) {
+export default function Layout() {
   const { user, login, logout } = useAuth();
-  const navigate = useNavigate();
 
   return (
     <div className="App min-h-screen">
@@ -89,7 +88,9 @@ export default function Layout({ children }) {
         </nav>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">{children}</main>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <Outlet />
+      </main>
 
       <footer className="border-t-2 border-black mt-12 py-8" data-testid="site-footer">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
