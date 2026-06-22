@@ -1,5 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'import { HashRouter as Router, Routes, Route } from 'react-router-dom'import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { AuthProvider } from '@/context/AuthContext'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'import { AuthProvider } from '@/context/AuthContext'
 import { Toaster } from 'sonner'
 import Layout from '@/components/Layout'
 import AuthCallback from '@/components/AuthCallback'
