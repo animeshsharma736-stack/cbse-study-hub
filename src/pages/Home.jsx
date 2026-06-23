@@ -1,4 +1,6 @@
-import React from "react";
+<h1 className="font-display font-black text-5xl sm:text-6xl lg:text-7xl tracking-tight leading-[1.05] text-red-500">
+  HELLO ANIMESH 🚀
+</h1>import React from "react";
 import { Link } from "react-router-dom";
 import { Sparkles, Target, BookOpen, ArrowRight } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
